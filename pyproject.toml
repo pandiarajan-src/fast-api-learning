@@ -1,3 +1,22 @@
+[project]
+name = "fastapi-hello"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic",
+]
+
+[dependency-groups]
+dev = [
+  "ruff",
+  "black",
+  "pre-commit",
+  "pytest",
+  "httpx",
+]
+
 [tool.black]
 line-length = 100
 target-version = ["py312"]
