@@ -7,6 +7,8 @@ dependencies = [
   "uvicorn[standard]",
   "pydantic",
   "pydantic[email]",
+  "httpx>=0.28.1",
+  "pydantic-settings>=2.10.1",
 ]
 
 [dependency-groups]
